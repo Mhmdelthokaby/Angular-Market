@@ -1,0 +1,13 @@
+<div class="row  row-cols-sm-1 row-cols-md-4 row-cols-lg-6">
+    <div *ngFor="let category of categories">
+        <a [routerLink]="['/categorysdetails' ,category._id ]">
+            <div class="product px-2 py-3">
+                <img src="{{category.image}}" height="200" class="w-100" alt="">
+                
+                <h3 class="h6 fw-bolder">{{category.title}}</h3>
+                
+                <button class="btn bg-main text-white w-100">Open</button>
+            </div>
+        </a>
+    </div>
+</div>
